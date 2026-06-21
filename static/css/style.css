@@ -1,0 +1,104 @@
+:root {
+  --yahoo-red: #e60033;
+  --ebay-blue: #0064d2;
+  --ebay-yellow: #f5af02;
+  --surface: #f8f9fa;
+}
+
+body {
+  background: var(--surface);
+  font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.platform-badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-right: 4px;
+}
+.badge-yahuoku  { background: var(--yahoo-red); color: #fff; }
+.badge-flea     { background: #ff9500; color: #fff; }
+.badge-ebay     { background: var(--ebay-blue); color: #fff; }
+
+.card { border: none; box-shadow: 0 1px 4px rgba(0,0,0,.08); }
+.card-header { font-weight: 600; background: #fff; border-bottom: 2px solid #e9ecef; }
+
+.stat-box {
+  background: #fff;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  padding: 12px 16px;
+  text-align: center;
+}
+.stat-box .label { font-size: .75rem; color: #6c757d; margin-bottom: 2px; }
+.stat-box .value { font-size: 1.3rem; font-weight: 700; }
+
+.title-display {
+  background: #f0f4ff;
+  border: 1px solid #c8d8ff;
+  border-radius: 6px;
+  padding: 10px 14px;
+  font-size: 1rem;
+  word-break: break-all;
+}
+.title-length {
+  font-size: .75rem;
+  color: #6c757d;
+}
+.title-length.over { color: #dc3545; font-weight: 600; }
+
+.desc-box {
+  background: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  padding: 14px;
+  white-space: pre-wrap;
+  font-size: .875rem;
+  max-height: 400px;
+  overflow-y: auto;
+}
+.desc-box.html-mode { white-space: normal; }
+
+.tip-list { padding-left: 1.2rem; }
+.tip-list li { margin-bottom: 4px; font-size: .875rem; }
+
+.rec-card {
+  border-left: 4px solid;
+  padding: 12px 16px;
+  border-radius: 0 6px 6px 0;
+  background: #fff;
+  margin-bottom: 12px;
+}
+.rec-card.yahuoku { border-color: var(--yahoo-red); }
+.rec-card.flea    { border-color: #ff9500; }
+.rec-card.ebay    { border-color: var(--ebay-blue); }
+.rec-price { font-size: 1.4rem; font-weight: 700; }
+.rec-net   { font-size: .85rem; color: #6c757d; }
+
+.spinner-wrap { display: flex; align-items: center; gap: 10px; padding: 20px 0; }
+
+#results { display: none; }
+#results.show { display: block; }
+
+.copy-btn { font-size: .8rem; }
+
+.nav-tabs .nav-link { color: #495057; }
+.nav-tabs .nav-link.active { font-weight: 600; }
+
+.chart-container { position: relative; height: 200px; }
+
+.api-status {
+  font-size: .78rem;
+  padding: 4px 10px;
+  border-radius: 20px;
+  display: inline-block;
+}
+.api-status.ok  { background: #d1fae5; color: #065f46; }
+.api-status.off { background: #fee2e2; color: #991b1b; }
